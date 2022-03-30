@@ -1,0 +1,67 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Swiper-->
+        <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Vacantes</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Tenemos el trabajo ideal para ti</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Empleador-Empleado</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Haciendo uso del sitio web, mejoramos la experiencia entre empleado y empleador.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Latest blog posts-->
+      <section class="section section-sm bg-default" id="news">
+        <div class="container">
+          <h2>Vacantes Disponibles</h2>
+          <div class="row row-45">
+            {% for Cargo in Cargo_Profesional %}
+
+            <div class="col-sm-6 col-lg-4 wow fadeInLeft">
+              <!-- Post Modern-->
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="{% static 'images/modgrupal.jpg' %}" alt="" width="370" height="307"/>
+                  <div class="post-modern-time">
+                    <time datetime="2019-07-04"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">04</span></time>
+                  </div></a>
+                  <h3 class="post-modern-title"><a href="#">{{ Cargo.titulo }} </a></h3>
+                <h4 class="post-modern-title"><a href="#">{{ Cargo.direccion }} </a></h4>
+                <p class="post-modern-text">{{ Cargo.descripcion }}</p>
+              </article>
+            </div>
+            {% endfor %}
+    </div>
+  </div>
+</section>
+          
+
+
+
+
+            
+{% endblock %}

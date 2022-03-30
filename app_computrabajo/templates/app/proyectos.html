@@ -1,0 +1,169 @@
+l{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+ <!-- Swiper-->
+ <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+    <div class="swiper-wrapper text-center">
+      <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+        <div class="swiper-slide-caption section-md">
+          <div class="container">
+            <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
+            <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+        <div class="swiper-slide-caption section-md">
+          <div class="container">
+            <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Proyectos</h1>
+            <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Nos dedicamos a reunir propuestas de trabajo de diversas áreas y asi contribuir a que tengas un buen trabajo.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
+        <div class="swiper-slide-caption section-md">
+          <div class="container">
+            <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Empleador-Empleado</h1>
+            <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Haciendo uso del sitio web, mejoramos la experiencia entre empleado y empleador.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+
+
+     <!-- Latest Projects-->
+     <section class="section section-sm section-fluid bg-default text-center" id="projects">
+        <div class="container-fluid">
+          <h2 class="wow fadeInLeft">Tenemos Nuevos Proyectos.</h2>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">En nuestro sitio, puede navegar por los más recientes servicios ofertados para nuestros usuarios en busca de propuestas de trabajo, en diferentes áreas. Trabajamos en conjunto con los diversos empleadores que nos ayudan a encontrar un buen trabajo para ti.</p>
+          <div class="isotope-filters isotope-filters-horizontal">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filtrar</button>
+            <ul class="isotope-filters-list" id="isotope-3">
+              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">Todo</a></li>
+              <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">Antecedentes</a></li>
+              <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Empleador</a></li>
+              <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Origen</a></li>
+              <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">Empleado</a></li>
+            </ul>
+          </div>
+          <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/libretacompu.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/libretacompu.jpg' %}" data-lightgallery="item"><img src="{% static 'images/libretacompu.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Usuario Empleado</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Trabajamos arduamente para que su estancia en la busqueda de trabajo sea satisfactoriamente.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/tetrabajo.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/tetrabajo.jpg' %}" data-lightgallery="item"><img src="{% static 'images/tetrabajo.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Desempleo en México</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Es la variante para no hacer crecer el país. Así mismo el tener pocas posibilidades para superarse.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/mujerapple.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/mujerapple.jpg' %}" data-lightgallery="item"><img src="{% static 'images/mujerapple.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Usuario Empleador</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Trabajamos en conjunto para mejorar la variante de desempleo, asi mismo para contribuir a la mejora del país.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/personastrabajando.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/personastrabajando.jpg' %}" data-lightgallery="item"><img src="images/personastrabajando.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Taza de Desempleo</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">La cifra de desempleo en México fue de 2.1 millones de personas hasta el año 2021; esto es una cifra alarmante, de este modo surge la idea de crear un sitio donde se facilite a la población conseguir trabajo.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/griscompu.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/griscompu.jpg' %}" data-lightgallery="item"><img src="{% static 'images/griscompu.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Internautas</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Los usuarios internautas a lo largo de los años va creciendo gradualmente por lo que estadisticamente hablando se estima que alrededor de 92 millones de personas utilizan internet, esto conforma la idea  que un Sitio de esta magnitud sea el medio para dar a conocer las diversas ofertas de trabajo.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/compania.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/compania.jpg' %}" data-lightgallery="item"><img src="{% static 'images/compania.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Falta de Conocimiento</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">De Plataformas en donde se exiva información segura, confiable y veras sobre empleos formales o informales.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/grupo.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/grupo.jpg' %}" data-lightgallery="item"><img src="{% static 'images/grupo.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Navegación del Empleador.</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Su funsión principal es mantener informados a los usuarios que buscan trabajo y brindarles información segura y optima. Y a las empresas a encontrar al profesional que mejor encaje con sus necesidades</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{% static 'images/sillatrabajo.jpg' %}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/sillatrabajo.jpg' %}" data-lightgallery="item"><img src="{% static 'images/sillatrabajo.jpg' %}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Facilidades</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Tener la posibilidad de revisar más áreas disponibles y complementar la comunicación entre el Empleador y el Empleado,.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+{% endblock %}

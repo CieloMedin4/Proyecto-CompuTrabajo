@@ -1,0 +1,116 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Swiper-->
+        <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/clips.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/oficinapantalla.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Bolsa de Trabajo</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Nos dedicamos a reunir propuestas de trabajo de diversas áreas y asi contribuir a que tengas un buen trabajo.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/tulipan.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Empleador-Empleado</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Haciendo uso del sitio web, mejoramos la experiencia entre empleado y empleador.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+          
+          <section class="section section-sm section-first bg-default text-center" id="services">
+            <div class="container">
+              <div class="row row-30 justify-content-center">
+                <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                </div>
+                <div class="col-lg-7 col-xl-6">
+                  <div class="row row-30">
+                    <div class="col-sm-6 wow fadeInRight">
+                      
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+                      
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
+                      
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% for Cargo in resultados %}
+
+            <div class="col-sm-6 col-lg-4 wow fadeInLeft">
+              <!-- Post Modern-->
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="{% static 'images/modgrupal.jpg' %}" alt="" width="370" height="307"/>
+                  <div class="post-modern-time">
+                    <time datetime="2019-07-04"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">04</span></time>
+                  </div></a>
+                  <h3 class="post-modern-title"><a href="#">{{Cargo.titulo}} </a></h3>
+                <h4 class="post-modern-title"><a href="#">{{Cargo.direccion}} </a></h4>
+                <p class="post-modern-text">{{ Cargo.descripcion }}</p>
+              </article>
+            </div>
+            {% endfor %}
+
+            {% for Orienta in orien %}
+
+            <div class="col-md-6 col-xl-4 wow fadeInRight">
+              <!--Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="{% static 'images/inovacion.jpg' %}" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">{{ Orienta.titulo }}</a></h4>
+                    <p class="quote-modern-status">{{ Orienta.subtitulo }}</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">{{ Orienta.descripcion }}</p>
+                </div>
+              </article>
+            </div>
+
+            {% endfor %}
+
+
+            {% for Servicio in servicio %}
+
+
+            <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+              <article class="box-icon-modern box-icon-modern-2">
+                <div class="box-icon-modern-icon linearicons-phone-in-out"></div>
+                <h5 class="box-icon-modern-title"><a href="#">{{ Servicio.titulo }}</a></h5>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">{{ Servicio.descripcion }}</p>
+              </article>
+            </div>
+            {% endfor %}
+
+
+
+          </section>
+    
+         
+{% endblock %}
+     

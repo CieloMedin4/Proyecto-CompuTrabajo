@@ -1,0 +1,181 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Swiper-->
+        <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Liderar</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            
+        
+            <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
+              <div class="swiper-slide-caption section-md">
+                 <!-- Busqueda-->
+                <div class="content">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Realizar Busqueda</h1>
+                  <form action="/buscar/" method="get">
+                    <div class="">
+                      <input class="form-input form-control-has-validation" placeholder="Busca Aqui" type="text" name="busqueda"  size="22" style="width: 300px; margin:0 auto;">
+                      <p><input class="button button-primary button-ujarak" type="submit" value="Buscar"></p>
+                    </div>
+                  </form>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Swiper Pagination-->
+          <div class="swiper-pagination__module">
+            <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
+            <div class="swiper-pagination__divider"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+      </div>
+      <!-- See all services-->
+      <section class="section section-sm section-first bg-default text-center" id="services">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp"><img src="{% static 'images/liderazgo2.jpg' %}" alt="hola" width="415" height="592"/>
+            </div>
+
+      <!-- Latest Projects-->
+      <section class="section section-sm section-fluid bg-default text-justify" id="projects">
+        <div class="container-fluid">
+            <h2 class="wow fadeInLeft text-center">La Capacidad de Liderar</h2>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Un líder es aquel que es capaz de motivar a las personas para lograr una meta en común. El tipo de líder que haya en un equipo o empresa depende de su entorno y de la posición.</p>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Sigue leyendo para descubrir qué tipo de líder eres y qué tipo de líder es tu director o gerente.</p>
+          <h4 class="wow fadeInLeft text-center">Jefe o Líder</h4>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Un jefe es una persona que posee poder y lo usa para demandar autoridad.</p>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Si seguimos la mentalidad tradicional de una compañía, un jefe es visto como la persona que impone las reglas y tareas para cumplir con los objetivos sin importar los métodos utilizados ni la participación de su equipo.</p>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Por el contrario, el líder es aquel que dirige un equipo de trabajo utilizando la motivación, critícas constructivas, empatía y escucha activa.</p>
+          
+          <div class="isotope-filters isotope-filters-horizontal">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filtrar</button>
+            <ul class="isotope-filters-list" id="isotope-3">
+            </ul>
+          </div>
+
+      
+
+      <!-- Meet The Team-->
+      <section class="section section-sm section-fluid bg-default" id="team">
+        <div class="container-fluid">
+          <h2>Atracciones</h2>
+          <div class="row row-sm row-30 justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
+              <!--Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/equipomultigeneracional.jpg' %}" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="{% url 'inicio' %}">Beneficios de un Equipo Multigeneracional</a></h4>
+                  <p class="team-classic-status">La inclusion y trabajo en equipo ahora son un requisito</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+              <!--Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/personascondiscapacidad.jpg' %}" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="{% url 'inicio' %}">Empleabilidad para Personas Con Discapacidad</a></h4>
+                  <p class="team-classic-status">En busca de una oportunidad real para </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+            <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/liderazgo.jpg' %}" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="{% url 'inicio' %}">Capacidad de Liderazgo</a></h4>
+                  <p class="team-classic-status">Lanzate y se parte de este equipo desempeñandote como líder</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
+              <!--Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="{% static 'entornodigital.html' %}"><img src="{% static 'images/entornodigital.jpg' %}" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="{% url 'inicio' %}">Entorno Digital</a></h4>
+                  <p class="team-classic-status">Haz de tu empresa un lugar agradable</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Latest blog posts-->
+      <section class="section section-sm bg-default" id="news">
+        <div class="container">
+          <h2>Vacantes Disponibles</h2>
+          <div class="row row-45">
+            {% for Cargo in Cargo_Profesional %}
+
+            <div class="col-sm-6 col-lg-4 wow fadeInLeft">
+              <!-- Post Modern-->
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="{% static 'images/modgrupal.jpg' %}" alt="" width="370" height="307"/>
+                  <div class="post-modern-time">
+                    <time datetime="2019-07-04"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">04</span></time>
+                  </div></a>
+                  <h3 class="post-modern-title"><a href="#">{{Cargo.titulo}} </a></h3>
+                <h4 class="post-modern-title"><a href="#">{{Cargo.direccion}} </a></h4>
+                <p class="post-modern-text">{{ Cargo.descripcion }}</p>
+              </article>
+            </div>
+            
+           
+         
+      {% endfor %}
+    </div>
+  </div>
+</section>
+      <!-- Contact information-->
+      <section class="section section-sm bg-default">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="tel:#">+52 786-119-1208</a></p>
+                  <p class="box-contacts-link"><a href="tel:#">+52 000-000-0000</a></p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="#">Ejido Santa Rita S/N Cuartel V</a></p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="mailto:#">cielitomedina35@gmail.com</a></p>
+                  <p class="box-contacts-link"><a href="mailto:#">compuTrabajo@gmail.com</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+{% endblock %}
