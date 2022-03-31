@@ -39,10 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_computrabajo',
-    'crispy_forms', #Para los formularios con Boostrap
 ]
 
-CRISPY_TEMPLATE_PACK = 'boostrap4' #Formularios con crispy
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
