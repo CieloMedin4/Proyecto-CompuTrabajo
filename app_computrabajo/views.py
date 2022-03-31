@@ -23,15 +23,14 @@ def multigeneracional(request):
 
 def contacto(request):
     datos = {
-        'Comentarios' : Comentarios
-        'form': ComentariosForm
+        "form": ComentariosForm
     }
     if request.method == 'POST':
         formulario = ComentariosForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
         else:
-            datos['form'] = formulario
+            datos["form"] = formulario
     return render(request, 'app/contacto.html', datos)
 
 
