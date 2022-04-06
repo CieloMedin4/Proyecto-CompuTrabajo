@@ -1,0 +1,64 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block titulo %}
+Login Users
+{% endblock %}
+
+{% block contenido %}
+<section class="section section-sm section-last bg-default text-left" id="contacts">
+    <div class="container">
+      <article class="title-classic">
+        <div class="title-classic-title">
+          <h3>Login Usuario</h3>
+        </div>
+        <div class="title-classic-text">
+                    
+        </div>
+      </article>
+      <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" >
+        {% csrf_token %}
+        {% if form.errors %}
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <div id="form_errors">
+              {% for key, value in form.errors.items %}
+                <strong>{{ value }}</strong>
+              {% endfor %}
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endif %}
+
+
+
+        <div class="row row-14 gutters-14">
+          
+            <div class="form-wrap">
+              <label class="form-label" for="contact-your-name-2">Username</label>
+              {{ form.username }}
+            </div>
+            
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-your-name-2">Password</label>
+                  {{ form.password }}
+                </div>
+          </div>
+         
+            <div class="form-wrap">
+              <label class="form-label" for="contact-your-name-2">Remember me</label>
+              {{ form.remember_me }}
+            </div>
+        
+        </div>
+        <button class="button button-primary button-pipaluk" type="submit"> Log in</button>
+        <button class="button button-primary button-pipaluk" type="reset">Reset Form</button>
+        <p>¿No Tienes Una Cuenta?, Registrate <a href="{% url 'registro' %}">Aquí</a></p>
+      </form>
+    </div>
+  </section>
+       
+
+     
+{% endblock %}

@@ -62,6 +62,15 @@
                         <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'vacantes' %}">Vacantes</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contacto' %}">Contacto</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="/admin/">ADMIN</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'registro' %}">Registro</a></li>
+                        {% user.is_authenticated %}
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'logout' %}">Logout</a></li>
+                        {% else %}
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'Login' %}">LogIn</a></li>
+                        {% endif %}
+                        
+                        
+                        
                       
                       </ul>
                     </div>
