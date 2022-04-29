@@ -84,6 +84,7 @@ class Empleos_Cargo_Profesional(models.Model):
     sueldo = models.FloatField(blank= False,null=False)
     contrato = models.CharField(max_length=100, blank=False)
     informacion_empresa = models.TextField(blank=False, null=False)
+    imagen = models.ImageField(null=True, upload_to ="media")
 
     def __str__(self):      #para nombrar el campo principal
         return self.cargo_profesional

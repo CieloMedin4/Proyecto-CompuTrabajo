@@ -1,333 +1,393 @@
 {% extends "app/base.html" %}
 {% load static %}
 
+{% block titulo %}
+Inicio
+{% endblock %}
+
 {% block contenido %}
 
-        <!-- Swiper-->
-        <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
-          <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
-              <div class="swiper-slide-caption section-md">
-                <div class="container">
-                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
-                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
-              <div class="swiper-slide-caption section-md">
-                <div class="container">
-                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Bolsa de Trabajo</h1>
-                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Nos dedicamos a reunir propuestas de trabajo de diversas áreas y asi contribuir a que tengas un buen trabajo.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
-              <div class="swiper-slide-caption section-md">
-                <div class="container">
-                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Empleador-Empleado</h1>
-                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Haciendo uso del sitio web, mejoramos la experiencia entre empleado y empleador.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
-              <div class="swiper-slide-caption section-md">
-                 <!-- Busqueda-->
-                <div class="content">
-                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Realizar Busqueda</h1>
-                  <form action="/buscar/" method="get">
-                    <div class="">
-                      <input class="form-input form-control-has-validation" placeholder="Busca Aqui" type="text" name="busqueda"  size="22" style="width: 300px; margin:0 auto;">
-                      <p><input class="button button-primary button-ujarak" type="submit" value="Buscar"></p>
-                    </div>
-                  </form>
-        
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <!-- Swiper Pagination-->
-          <div class="swiper-pagination__module">
-            <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
-            <div class="swiper-pagination__divider"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
-
+<!-- Swiper-->
+<section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859"
+  data-simulate-touch="true" data-direction="vertical" data-nav="false">
+  <div class="swiper-wrapper text-center">
+    <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+      <div class="swiper-slide-caption section-md">
+        <div class="container">
+          <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
+          <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Somos una web
+            comprometida en toda Latinoamérica.</p><a class="button button-primary button-ujarak" href="#modalCta"
+            data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
+        </div>
       </div>
-      
-     
-
-      <!-- Years of experience-->
-      <section class="section section-sm bg-default">
+    </div>
+    <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
+      <div class="swiper-slide-caption section-md">
         <div class="container">
-          <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
-            <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="#">
-                <div id="particles-js"></div><span class="counter">10</span></a></div>
-            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
-              <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
-                <h3 class="title-decoration-lines-left">Años de Experiencia</h3>
-                <p class="text-gray-500">Computrabajo ayuda a las personas a encontrar un buen trabajo sobre todo a crecer profesionalmente y a las empresas a encontrar al profesional que mejor satisfaga sus necesidades.</p> <div class="group-sm group-middle group justify-content-end"><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal">Contactanos</a></div>
-              </div>
-            </div>
-            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-              <div class="row justify-content-center border-2-column offset-top-xl-26">
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">2</span><span class="symbol">k</span>
-                    </div>
-                    <h6 class="counter-amy-title">Vacantes</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">40</span>
-                    </div>
-                    <h6 class="counter-amy-title">Empleados</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">12</span>
-                    </div>
-                    <h6 class="counter-amy-title">Cerca</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">160</span>
-                    </div>
-                    <h6 class="counter-amy-title">Empleadores</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-12 align-self-center">
-              <div class="row row-30 justify-content-center">
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"><a class="clients-classic" href="#"><img src="{% static 'images/ingeniero.jpg' %}" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="{% static 'images/licenciado.jpg' %}" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="{% static 'images/auxiliar.jpg' %}" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="{% static 'images/vendedor.jpg' %}" alt="" width="270" height="117"/></a></div>
-              </div>
-            </div>
-          </div>
+          <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Bolsa de Trabajo</h1>
+          <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Nos dedicamos a reunir
+            propuestas de trabajo de diversas áreas y asi contribuir a que tengas un buen trabajo.</p><a
+            class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal"
+            data-caption-animate="fadeInUp" data-caption-delay="200">Contactanos</a>
         </div>
-      </section>
-
-      <!-- Meet The Team-->
-      <section class="section section-sm section-fluid bg-default" id="team">
-        <div class="container-fluid">
-          <h2>Atracciones</h2>
-          <div class="row row-sm row-30 justify-content-center">
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
-              <!--Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/equipomultigeneracional.jpg' %}" alt="" width="420" height="424"/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="{% url 'multigeneracional' %}">Beneficios de un Equipo Multigeneracional</a></h4>
-                  <p class="team-classic-status">La inclusion y trabajo en equipo ahora son un requisito</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
-              <!--Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/personascondiscapacidad.jpg' %}" alt="" width="420" height="424"/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="{% url 'discapacidad' %}">Empleabilidad para Personas Con Discapacidad</a></h4>
-                  <p class="team-classic-status">En busca de una oportunidad real para </p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
-            <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{% static 'images/liderazgo.jpg' %}" alt="" width="420" height="424"/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="{% url 'liderazgo' %}">Capacidad de Liderazgo</a></h4>
-                  <p class="team-classic-status">Lanzate y se parte de este equipo desempeñandote como líder</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
-              <!--Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="{% static 'entornodigital.html' %}"><img src="{% static 'images/entornodigital.jpg' %}" alt="" width="420" height="424"/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="{% url 'entornodigital' %}">Entorno Digital</a></h4>
-                  <p class="team-classic-status">Haz de tu empresa un lugar agradable</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- You dream — we embody-->
-      <section class="section section-sm bg-default text-md-left">
+      </div>
+    </div>
+    <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
+      <div class="swiper-slide-caption section-md">
         <div class="container">
-          <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-lg-6 col-xl-5 wow fadeInLeft">
-              <h2>Obtenga Más Información</h2>
-              <!-- Bootstrap tabs-->
-              <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
-                <!-- Nav tabs-->
-                <ul class="nav nav-tabs">
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1" data-toggle="tab">01</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2" data-toggle="tab">02</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3" data-toggle="tab">03</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4" data-toggle="tab">04</a></li>
-                </ul>
-                <!-- Tab panes-->
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="tabs-6-1">
-                    <h5 class="font-weight-normal">COMPROMISOS</h5>
-                    <p>Constantemente nos comprometemos con la población a mejorar la estancia dentro del sitio para que encuentre lo que busca.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha" href="#">Conoce Más</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-2">
-                    <h5 class="font-weight-normal">SOCIALIZA</h5>
-                    <p>Mediante este sitio web pueden interactuar Empleado con Empleador para una mejor disposición del trabajo.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha" href="#">Conoce Más</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-3">
-                    <h5 class="font-weight-normal">SERVICIO AL CLIENTE</h5>
-                    <p>Cada usuario de CompuTrabajo puede obtener acceso a nuestro calificado soporte 24/7 via chat o teléfono. ¡Siéntase libre de hacernos cualquier pregunta!</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha" href="#">Conoce Más</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-4">
-                    <h5 class="font-weight-normal">USABILIDAD</h5>
-                    <p>Nuestro sitio web esta diseñado para tener una gran usabilidad para operar fácilmente sus busquedas.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha" href="#">Conoce Más</a></div>
-                  </div>
-                </div>
-              </div>
+          <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Empleador-Empleado</h1>
+          <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Haciendo uso del sitio
+            web, mejoramos la experiencia entre empleado y empleador.</p><a class="button button-primary button-ujarak"
+            href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp"
+            data-caption-delay="200">Contactanos</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" data-slide-bg="{% static 'images/notas.jpg' %}">
+      <div class="swiper-slide-caption section-md">
+        <!-- Busqueda-->
+        <div class="content">
+          <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Realizar Busqueda</h1>
+          <form action="/buscar/" method="get">
+            <div class="">
+              <input class="form-input form-control-has-validation" placeholder="Busca Aqui" type="text" name="busqueda"
+                size="22" style="width: 300px; margin:0 auto;">
+              <p><input class="button button-primary button-ujarak" type="submit" value="Buscar"></p>
             </div>
-            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
-              <div class="owl-carousel owl-style-1" data-items="2" data-stage-padding="0" data-loop="true" data-margin="0" data-mouse-drag="true" data-autoplay="true"><a class="box-device" href="#"><img src="{% static 'images/negocios.png' %}" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="{% static 'images/equipodetrabajo.jpg' %}" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="{% static 'images/oficinaplan.jpg' %}" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="{% static 'images/trabajando.jpg' %}" alt="" width="313" height="580"/></a></div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Swiper Pagination-->
+  <div class="swiper-pagination__module">
+    <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span
+        class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span>
+    </div>
+    <div class="swiper-pagination__divider"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+</div>
+
+
+
+<!-- Years of experience-->
+<section class="section section-sm bg-default">
+  <div class="container">
+    <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
+      <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="#">
+          <div id="particles-js"></div><span class="counter">10</span>
+        </a></div>
+      <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
+          <h3 class="title-decoration-lines-left">Años de Experiencia</h3>
+          <p class="text-gray-500">Computrabajo ayuda a las personas a encontrar un buen trabajo sobre todo a crecer
+            profesionalmente y a las empresas a encontrar al profesional que mejor satisfaga sus necesidades.</p>
+          <div class="group-sm group-middle group justify-content-end"><a class="button button-primary button-ujarak"
+              href="#modalCta" data-toggle="modal">Contactanos</a></div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+        <div class="row justify-content-center border-2-column offset-top-xl-26">
+          <div class="col-9 col-sm-6">
+            <div class="counter-amy">
+              <div class="counter-amy-number"><span class="counter">2</span><span class="symbol">k</span>
+              </div>
+              <h6 class="counter-amy-title">Vacantes</h6>
+            </div>
+          </div>
+          <div class="col-9 col-sm-6">
+            <div class="counter-amy">
+              <div class="counter-amy-number"><span class="counter">40</span>
+              </div>
+              <h6 class="counter-amy-title">Empleados</h6>
+            </div>
+          </div>
+          <div class="col-9 col-sm-6">
+            <div class="counter-amy">
+              <div class="counter-amy-number"><span class="counter">12</span>
+              </div>
+              <h6 class="counter-amy-title">Cerca</h6>
+            </div>
+          </div>
+          <div class="col-9 col-sm-6">
+            <div class="counter-amy">
+              <div class="counter-amy-number"><span class="counter">160</span>
+              </div>
+              <h6 class="counter-amy-title">Empleadores</h6>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col-lg-6 col-xl-12 align-self-center">
+        <div class="row row-30 justify-content-center">
+          <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"><a class="clients-classic" href="#"><img
+                src="{% static 'images/ingeniero.jpg' %}" alt="" width="270" height="117" /></a></div>
+          <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".1s"><a
+              class="clients-classic" href="#"><img src="{% static 'images/licenciado.jpg' %}" alt="" width="270"
+                height="117" /></a></div>
+          <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a
+              class="clients-classic" href="#"><img src="{% static 'images/auxiliar.jpg' %}" alt="" width="270"
+                height="117" /></a></div>
+          <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".3s"><a
+              class="clients-classic" href="#"><img src="{% static 'images/vendedor.jpg' %}" alt="" width="270"
+                height="117" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- What people Say-->
-      <section class="section section-sm section-bottom-70 section-fluid bg-default">
-        <div class="container-fluid">
-          <h2>Te Podemos Orientar</h2>
-          <div class="row row-50 row-sm">
+<!-- Meet The Team-->
+<section class="section section-sm section-fluid bg-default" id="team">
+  <div class="container-fluid">
+    <h2>Atracciones</h2>
+    <div class="row row-sm row-30 justify-content-center">
+      <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
+        <!--Team Classic-->
+        <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+              src="{% static 'images/equipomultigeneracional.jpg' %}" alt="" width="420" height="424" /></a>
+          <div class="team-classic-caption">
+            <h4 class="team-classic-name"><a href="{% url 'multigeneracional' %}">Beneficios de un Equipo
+                Multigeneracional</a></h4>
+            <p class="team-classic-status">La inclusion y trabajo en equipo ahora son un requisito</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+        <!--Team Classic-->
+        <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+              src="{% static 'images/personascondiscapacidad.jpg' %}" alt="" width="420" height="424" /></a>
+          <div class="team-classic-caption">
+            <h4 class="team-classic-name"><a href="{% url 'discapacidad' %}">Empleabilidad para Personas Con
+                Discapacidad</a></h4>
+            <p class="team-classic-status">En busca de una oportunidad real para </p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+        <!-- Team Classic-->
+        <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+              src="{% static 'images/liderazgo.jpg' %}" alt="" width="420" height="424" /></a>
+          <div class="team-classic-caption">
+            <h4 class="team-classic-name"><a href="{% url 'liderazgo' %}">Capacidad de Liderazgo</a></h4>
+            <p class="team-classic-status">Lanzate y se parte de este equipo desempeñandote como líder</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
+        <!--Team Classic-->
+        <article class="team-classic team-classic-lg"><a class="team-classic-figure"
+            href="{% static 'entornodigital.html' %}"><img src="{% static 'images/entornodigital.jpg' %}" alt=""
+              width="420" height="424" /></a>
+          <div class="team-classic-caption">
+            <h4 class="team-classic-name"><a href="{% url 'entornodigital' %}">Entorno Digital</a></h4>
+            <p class="team-classic-status">Haz de tu empresa un lugar agradable</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
 
-            {% for Orienta in orienta %}
-
-            <div class="col-md-6 col-xl-4 wow fadeInRight">
-              <!--Quote Modern-->
-              <article class="quote-modern quote-modern-custom">
-                <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="{% static 'images/inovacion.jpg' %}" alt="" width="75" height="75"/></a></div>
-                  <div class="unit-body">
-                    <h4 class="quote-modern-cite"><a href="#">{{ Orienta.titulo }}</a></h4>
-                    <p class="quote-modern-status">{{ Orienta.subtitulo }}</p>
-                  </div>
-                </div>
-                <div class="quote-modern-text">
-                  <p class="q">{{ Orienta.descripcion }}</p>
-                </div>
-              </article>
+<!-- You dream — we embody-->
+<section class="section section-sm bg-default text-md-left">
+  <div class="container">
+    <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+      <div class="col-lg-6 col-xl-5 wow fadeInLeft">
+        <h2>Obtenga Más Información</h2>
+        <!-- Bootstrap tabs-->
+        <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
+          <!-- Nav tabs-->
+          <ul class="nav nav-tabs">
+            <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1"
+                data-toggle="tab">01</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2"
+                data-toggle="tab">02</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3"
+                data-toggle="tab">03</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4"
+                data-toggle="tab">04</a></li>
+          </ul>
+          <!-- Tab panes-->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tabs-6-1">
+              <h5 class="font-weight-normal">COMPROMISOS</h5>
+              <p>Constantemente nos comprometemos con la población a mejorar la estancia dentro del sitio para que
+                encuentre lo que busca.</p>
+              <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                  data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha"
+                  href="/digits/">Conoce Más</a></div>
             </div>
-
-            {% endfor %}
-
-            
-
-            
-
+            <div class="tab-pane fade" id="tabs-6-2">
+              <h5 class="font-weight-normal">SOCIALIZA</h5>
+              <p>Mediante este sitio web pueden interactuar Empleado con Empleador para una mejor disposición del
+                trabajo.</p>
+              <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                  data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha"
+                  href="/digits/">Conoce Más</a></div>
+            </div>
+            <div class="tab-pane fade" id="tabs-6-3">
+              <h5 class="font-weight-normal">SERVICIO AL CLIENTE</h5>
+              <p>Cada usuario de CompuTrabajo puede obtener acceso a nuestro calificado soporte 24/7 via chat o
+                teléfono. ¡Siéntase libre de hacernos cualquier pregunta!</p>
+              <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                  data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha"
+                  href="/digits/">Conoce Más</a></div>
+            </div>
+            <div class="tab-pane fade" id="tabs-6-4">
+              <h5 class="font-weight-normal">USABILIDAD</h5>
+              <p>Nuestro sitio web esta diseñado para tener una gran usabilidad para operar fácilmente sus busquedas.
+              </p>
+              <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                  data-toggle="modal">Contactanos</a><a class="button button-default-outline button-wapasha"
+                  href="/digits/">Conoce Más</a></div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+        <div class="owl-carousel owl-style-1" data-items="2" data-stage-padding="0" data-loop="true" data-margin="0"
+          data-mouse-drag="true" data-autoplay="true"><a class="box-device" href="#"><img
+              src="{% static 'images/negocios.png' %}" alt="" width="313" height="580" /></a><a class="box-device"
+            href="#"><img src="{% static 'images/equipodetrabajo.jpg' %}" alt="" width="313" height="580" /></a><a
+            class="box-device" href="#"><img src="{% static 'images/oficinaplan.jpg' %}" alt="" width="313"
+              height="580" /></a><a class="box-device" href="#"><img src="{% static 'images/trabajando.jpg' %}" alt=""
+              width="313" height="580" /></a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Pricing-->
-      <section class="section section-sm section-bottom-70 section-fluid bg-default">
-        <div class="container">
-          <h2>Categoría</h2>
-          <div class="row row-30 justify-content-center">
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Aqui puedes encontrar</h5>
-                  <h3 class="box-pricing-price">trabajo</h3>
-                  <div class="box-pricing-time">conforme a tus espectativas</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Oficinas</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Empleos de Administración/Oficina</li>
-                    <li class="active">Empleos de Recursos Humanos</li>
-                    <li class="active">Empleos de Atención a Clientes</li>
-                    <li class="active">Empleos de Contabilidad</li>
-                    <li class="active">Empleos de Comercio Exterior</li>
-                    <li class="active">Empleos de Cajero/a</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Otros Empleos</a></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black box-pricing-popular">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Tenemos Para Ti</h5>
-                  <h3 class="box-pricing-price">Lo Nuevo de la Era</h3>
-                  <div class="box-pricing-time">Tecnologíca</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Tecnologíco</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Empleos de Mercadotécnia</li>
-                    <li class="active">Empleos de Publicidad</li>
-                    <li class="active">Empleos de Comunicación</li>
-                    <li class="active">Empleos de Imformática</li>
-                    <li class="active">Empleos de Programador</li>
-                    <li class="active">Empleos de Tester</li>
-                    <li class="active">Empleos de Analista</li>
-                    <li class="active">Empleos de Monitorista</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">Otros Empleos</a></div>
-                <div class="box-pricing-badge">Innova</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Hacemos de tu Conocimiento </h5>
-                  <h3 class="box-pricing-price">Algunos de los Empleos</h3>
-                  <div class="box-pricing-time">Disponibles</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Generales</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Empleos de Construcción y Obra</li>
-                    <li class="active">Empleos de Servicios Generales</li>
-                    <li class="active">Empleos de Aseo y Seguridad</li>
-                    <li class="active">Empleos de Almacén</li>
-                    <li class="active">Empleos de Logística</li>
-                    <li class="active">Empleos de Transporte</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Otros Empleos</a></div>
-              </div>
+<!-- What people Say-->
+<section class="section section-sm section-bottom-70 section-fluid bg-default">
+  <div class="container-fluid">
+    <h2>Te Podemos Orientar</h2>
+    <div class="row row-50 row-sm">
+
+      {% for Orienta in orienta %}
+
+      <div class="col-md-6 col-xl-4 wow fadeInRight">
+        <!--Quote Modern-->
+        <article class="quote-modern quote-modern-custom">
+          <div class="unit unit-spacing-md align-items-center">
+            <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles"
+                  src="{% static 'images/inovacion.jpg' %}" alt="" width="75" height="75" /></a></div>
+            <div class="unit-body">
+              <h4 class="quote-modern-cite"><a href="#">{{ Orienta.titulo }}</a></h4>
+              <p class="quote-modern-status">{{ Orienta.subtitulo }}</p>
             </div>
           </div>
+          <div class="quote-modern-text">
+            <p class="q">{{ Orienta.descripcion }}</p>
+          </div>
+        </article>
+      </div>
+
+      {% endfor %}
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing-->
+<section class="section section-sm section-bottom-70 section-fluid bg-default">
+  <div class="container">
+    <h2>Categoría</h2>
+    <div class="row row-30 justify-content-center">
+      <div class="col-md-6 col-lg-5 col-xl-4">
+        <div class="box-pricing box-pricing-black">
+          <div class="box-pricing-body">
+            <h5 class="box-pricing-title">Aqui puedes encontrar</h5>
+            <h3 class="box-pricing-price">trabajo</h3>
+            <div class="box-pricing-time">conforme a tus espectativas</div>
+            <div class="box-pricing-divider">
+              <div class="divider"></div><span>Oficinas</span>
+            </div>
+            <ul class="box-pricing-list">
+              <li class="active">Empleos de Administración/Oficina</li>
+              <li class="active">Empleos de Recursos Humanos</li>
+              <li class="active">Empleos de Atención a Clientes</li>
+              <li class="active">Empleos de Contabilidad</li>
+              <li class="active">Empleos de Comercio Exterior</li>
+              <li class="active">Empleos de Cajero/a</li>
+            </ul>
+          </div>
+          <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Otros
+              Empleos</a></div>
         </div>
-      </section>
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-4">
+        <div class="box-pricing box-pricing-black box-pricing-popular">
+          <div class="box-pricing-body">
+            <h5 class="box-pricing-title">Tenemos Para Ti</h5>
+            <h3 class="box-pricing-price">Lo Nuevo de la Era</h3>
+            <div class="box-pricing-time">Tecnologíca</div>
+            <div class="box-pricing-divider">
+              <div class="divider"></div><span>Tecnologíco</span>
+            </div>
+            <ul class="box-pricing-list">
+              <li class="active">Empleos de Mercadotécnia</li>
+              <li class="active">Empleos de Publicidad</li>
+              <li class="active">Empleos de Comunicación</li>
+              <li class="active">Empleos de Imformática</li>
+              <li class="active">Empleos de Programador</li>
+              <li class="active">Empleos de Tester</li>
+              <li class="active">Empleos de Analista</li>
+              <li class="active">Empleos de Monitorista</li>
+            </ul>
+          </div>
+          <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">Otros
+              Empleos</a></div>
+          <div class="box-pricing-badge">Innova</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-4">
+        <div class="box-pricing box-pricing-black">
+          <div class="box-pricing-body">
+            <h5 class="box-pricing-title">Hacemos de tu Conocimiento </h5>
+            <h3 class="box-pricing-price">Algunos de los Empleos</h3>
+            <div class="box-pricing-time">Disponibles</div>
+            <div class="box-pricing-divider">
+              <div class="divider"></div><span>Generales</span>
+            </div>
+            <ul class="box-pricing-list">
+              <li class="active">Empleos de Construcción y Obra</li>
+              <li class="active">Empleos de Servicios Generales</li>
+              <li class="active">Empleos de Aseo y Seguridad</li>
+              <li class="active">Empleos de Almacén</li>
+              <li class="active">Empleos de Logística</li>
+              <li class="active">Empleos de Transporte</li>
+            </ul>
+          </div>
+          <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Otros
+              Empleos</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      
- 
 
-     
 
-      <!-- Bottom Banner-->
-       <!--<section class="section section-fluid"><a class="section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/banner-bg-01-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/banner-bg-01-1920x310.jpg) 1x, url(images/banner/banner-bg-01-3840x620.jpg) 2x )" target="_blank"><img src="{% static 'images/banner/banner-fg-01-1600x310.png' %}" srcset="{% static 'images/banner/banner-fg-01-1600x310.png 1x, images/banner/banner-fg-01-3200x620.png 2x' %}" alt="" width="1600" height="310"></a></section>-->
 
-      <!-- RD Google Map-->
+
+
+<!-- Bottom Banner-->
+<!--<section class="section section-fluid"><a class="section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/banner-bg-01-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/banner-bg-01-1920x310.jpg) 1x, url(images/banner/banner-bg-01-3840x620.jpg) 2x )" target="_blank"><img src="{% static 'images/banner/banner-fg-01-1600x310.png' %}" srcset="{% static 'images/banner/banner-fg-01-1600x310.png 1x, images/banner/banner-fg-01-3200x620.png 2x' %}" alt="" width="1600" height="310"></a></section>-->
+
+<!-- RD Google Map
       <section class="section section-fluid">
-        <!-- Google Map-->
+         Google Map
         <section class="section">
           <div class="google-map-container" data-center="6036 Richmond hwy., Alexandria, VA, 2230" data-zoom="5" data-styles="[ { &quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#444444&quot;}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.business&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;road&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:45}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b4d4e1&quot;},{&quot;visibility&quot;:&quot;on&quot;}]}]">
             <div class="google-map"></div>
@@ -336,6 +396,5 @@
             </ul>
           </div>
         </section>
-      </section>
+      </section>-->
 {% endblock %}
-     

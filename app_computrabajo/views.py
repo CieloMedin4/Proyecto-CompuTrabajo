@@ -1,7 +1,7 @@
 from ast import If
 from urllib import request
 from django.shortcuts import render, redirect
-from .models import Empleos_Cargo_Profesional, Servicios, Orienta, Comentarios
+from .models import Empleos_Cargo_Profesional, Servicios, Orienta, Comentarios, Empresas_Industria
 from .forms import ComentariosForm, userForm, loginForm
 from django.contrib import messages
 from django.views import View
@@ -38,6 +38,13 @@ def contacto(request):
     return render(request, 'app/contacto.html', datos)
 
 
+def comentarios(request):
+    com = Comentarios.objects.all()
+    datos = {
+        "Comentario" : com
+        }
+    return render(request, 'app/contacto.html', datos)
+
 def servicios(request):
     ser = Servicios.objects.all()
     datos = {
@@ -46,6 +53,10 @@ def servicios(request):
     return render(request, 'app/servicios.html', datos)
 
 def proyectos(request):
+    Industria = Empresas_Industria.objects.all()
+    datos = {
+        "Industrias" : Industria
+    }
     return render(request, 'app/proyectos.html')
 
 def vacantes(request):
@@ -55,6 +66,7 @@ def vacantes(request):
         }
     return render(request, 'app/vacantes.html', datos)
     
+
 
 def buscar(request):
     if request.GET['busqueda']:
@@ -76,7 +88,7 @@ def buscar(request):
 
 class Registro(View):
     form_class = userForm
-    initial = {'Key': 'value'}
+    initial = {'key': 'value'}
     template_name = 'app/registro.html'
 
     def get(self, request, *args, **kwargs):

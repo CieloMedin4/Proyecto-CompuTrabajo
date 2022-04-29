@@ -2,12 +2,16 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+{% block titulo %}
+Contacto
+{% endblock %}
+
 {% block contenido %}
 
         <!-- Swiper-->
         <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
           <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" data-slide-bg="{% static 'images/ordenador.jpg' %}">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/ordenadors.jpg' %}">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">CompuTrabajo</h1>
@@ -101,15 +105,6 @@
       </section>
 
 
-
-
-
-
-
-
-
-
-
              <!-- Contact Form-->
       <section class="section section-sm section-last bg-default text-left" id="contacts">
         <div class="container">
@@ -154,6 +149,11 @@
           </form>
         </div>
       </section>
+
+
+
+  
+</section>
            
     
          

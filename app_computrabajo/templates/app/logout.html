@@ -6,19 +6,31 @@ Logout Users
 {% endblock %}
 
 {% block contenido %}
-<div class="swiper-wrapper text-center">
+<section class="section section-sm bg-default">
+  <div class="group-sm group-middle group justify-content-end"></div>
+  <div class="swiper-wrapper text-center">
     <div class="swiper-slide" data-slide-bg="{% static 'images/escritos.jpg' %}">
-        <div class="container">
-          <h1>Logout Complete</h1>
+      <div class="container">
+        <div class="center">
+
+          <h1 class="wow fadeInLeft">Logout Complete</h1>
           <p>Has salido de la sesión correctamente.</p>
+        </div>
+        <div class="container">
+          <div class="center">
+            <div class="swiper-wrapper text-right">
+          
+            <p>Volver al Inicio <a href="{% url 'inicio' %}"> Aquí </a></p>
+            <div class="swiper-wrapper text-left"></div>
+            <p>Iniciar sesión nuevamente <a href="{% url 'login' %}"> Aquí </a></p>
           </div>
+        </div>
+    
+          
+          </div>
+        </div>
       </div>
     </div>
-    <div class="swiper-pagination__module">
-        <p>Volver al Inicio <a href="{% url 'inicio' %}"> Aquí </a></p>
-          </div>
-          <div class="swiper-pagination__module">
-            <p>Iniciar sesión nuevamente <a href="{% url 'login' %}"> Aquí </a></p>
-        </div>
+</section>
 
 {% endblock %}

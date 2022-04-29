@@ -19,8 +19,8 @@ urlpatterns = [
     path('proyectos/', proyectos, name='proyectos'),
     path('multigeneracional/', multigeneracional, name='multigeneracional'),
     path('registro/', Registro.as_view(), name='registro'),
-    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name='app/loggin.html', authentication_form=loginForm), name = 'login'),
-    path('logout/', auth_views.LoginView.as_view(template_name='app/logout.html'), name='logout'),
+    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name='app/login.html', authentication_form=loginForm), name = 'login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='app/logout.html'), name='logout'),
     
 ]
 urlpatterns += static (settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
